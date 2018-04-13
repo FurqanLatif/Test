@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Js Slider</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+    <section class="slider">
+        <div class="left">
+            <a href="#"><img src="images/Ic_keyboard_arrow_left_48px.svg.png" class="left_slide"></a>
+            </div>
+            <img src="images/krasivyi_korabl_-1024x768.jpg" id="change_slider_one"   class="slider_images">
+            <div class="right">
+                    <a href="#"><img src="images/angle-right-512.png" class="right_slide"></a>
+             </div>
+    </section>
+    <section class="slider_thumbnail">
+        <div class="slider_thumbnail_one">
+            <img src="images/1.jpg"  onclick="change_slider()"  class="slider_thumbnail_img change_image">
+        </div>
+        <div class="slider_thumbnail_two">
+            <img src="images/2.jpg"   onclick="change_slider_t()"
+      class="slider_thumbnail_img change_image_two">
+        </div>
+        <div class="slider_thumbnail_three">
+            <img src="images/3.jpg"  onclick="document.getElementById('change_slider_one').src = this.src"
+            class="slider_thumbnail_img change_image_three">
+        </div>
+    </section>
+</body>
+<script src="main.js"></script>
+</html>
